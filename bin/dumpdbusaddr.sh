@@ -1,0 +1,2 @@
+#!/bin/sh
+[ "$DBUS_SESSION_BUS_ADDRESS" ] && echo "export DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS" > $TMPDIR/dumpeddbusaddr
