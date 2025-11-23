@@ -18,11 +18,14 @@ gateways=(
 pids=()
 for i in ${gateways[@]}; do
   wget "https://${i}/ipfs/${1}?format=car" \
-    --timeout=10 --tries=1 \
+    --timeout=120 --tries=1 \
     -O /dev/null \
     -U 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36' &
   pids+=($!)
 done
 for i in ${pids[@]}; do
+  printf "==> Waiting for: "
+  ps --no-headers -p $i -o pid,cmd
+  echo ''
   wait $i
 done
