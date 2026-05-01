@@ -9,6 +9,7 @@ dn42.
 23.172.in-addr.arpa.
 10.in-addr.arpa.
 d.f.ip6.arpa.
+neo.
 "
 
 echo 'trust-anchors {'
