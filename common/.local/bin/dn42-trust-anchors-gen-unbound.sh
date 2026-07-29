@@ -6,4 +6,5 @@ exec dig @172.20.0.53 +tcp \
   22.172.in-addr.arpa. DNSKEY \
   23.172.in-addr.arpa. DNSKEY \
   10.in-addr.arpa. DNSKEY \
-  d.f.ip6.arpa. DNSKEY
+  d.f.ip6.arpa. DNSKEY \
+  neo. DNSKEY
